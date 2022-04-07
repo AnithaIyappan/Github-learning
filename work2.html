@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work2</title>
+    <script src="https://kit.fontawesome.com/95a9a79f58.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            background: #e4d3d6;
+            background: fixed;
+            position: relative;
+        }
+        body{
+            background-color: rgb(246, 213, 238);; 
+        }
+        
+        .container{
+            /* background-size:cover; */
+            /* width: fit-content; */
+            background:fixed;
+            display: flex;
+            margin-top: 50px;
+        }
+        .container .list1 .list2{
+            float: left;
+            list-style-type: none;
+            padding-left: 23px;
+            margin-left: 10px;
+            position: relative;
+            left: 180px;
+            font-size: 16px;
+            font-family:'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        .container button{
+            margin-left: 300px;
+            width:150px;
+            height: 40px;
+            color: white;
+            background-color: black;
+            border: none;
+            border-radius: 4px;
+        }
+        .container p{
+            position: relative;
+            top: -30px;
+            font-size: 25px;
+            font-weight: bold;
+            font-family:sans-serif;
+            left: 100px;
+        }
+        .container p span{
+            font-size: large;
+            font-weight: bold;
+            font-family:sans-serif;
+            color: rgb(11, 224, 224);
+        }
+        .container2{
+            position: absolute;
+            left: 20%;
+        }
+        .container2 p{
+            font-size: 13px;
+            font-weight: bold;
+            color: black;
+        }
+        .container2 p span{
+            font-size: large;
+            font-weight: bold;
+            font-family:sans-serif;
+            color: rgb(11, 224, 224);
+        }
+        .container2 h2{
+            color: black;
+            font-size: 40px;
+        }
+       .child{
+            height: 100px;
+            width: 200px;
+            background: black;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding-left: 40px;
+            /* padding: 20px; */
+            position: absolute;
+            left: 67%;
+            top: 30%;
+            
+        }
+        .child .para1{
+            color: white;
+            background: black;
+        }
+        .child .para2{
+            color: green;
+            background: black;
+        }
+        .child2{
+            border: 1px solid rgb(195, 207, 195);
+            border-radius: 50%;
+            background-color: rgb(218, 223, 223);
+            height: 3px;
+            width: 3px;
+            margin-top: 100px;
+            position: relative;
+            bottom: 5px;
+            left: 155px;
+        }
+        .child3{
+            border: 1px solid rgb(182, 224, 182);
+            border-radius: 50%;
+            background-color: aqua;
+            height: 3px;
+            width: 3px;
+            margin-top: 5px;
+            position: relative;
+            bottom: 5px;
+            left: 155px;
+        }
+        .child4{
+            border: 1px solid rgb(195, 207, 195);;
+            border-radius: 50%;
+            background-color: rgb(218, 223, 223);
+            height: 3px;
+            width: 3px;
+            margin-top: 5px;
+            position: relative;
+            bottom: 5px;
+            left: 155px;
+        }
+        .gallery-cf{
+            position: absolute;
+            display: flex;
+            bottom:-180px;
+            left: 300px;
+            
+        }
+        .image1{
+            height: 180px;
+            width:190px;
+            border-radius: 7px;
+            margin-left: 15px;
+            /* padding-left: 10px; */
+        }
+        .image2{
+            height: 220px;
+            width: 180px;
+            border-radius: 7px;
+            margin-left: 15px;
+            /* padding-left: 10px; */
+        }
+        .image3{
+            height: 220px;
+            width: 190px;
+            border-radius: 7px;
+            margin-left: 15px;
+            /* padding-left: 10px; */
+        }
+        .image4{
+            height: 140px;
+            width: 140px;
+            border-radius: 7px;
+            margin-left: 15px;
+            /* padding-left: 10px; */
+        }
+        .image5{
+            height: 210px;
+            width: 190px;
+            border-radius: 7px;
+            margin-left: 15px;
+            /* padding-left: 10px; */
+        }
+        .circle{
+            height: 70px;
+            width: 70px;
+            background-color: rgb(11, 224, 224);
+            border-radius: 50%;
+            position: relative;
+            left: 130px;
+            top: 140px;
+        }
+        .circle i{
+            position: relative;
+            left: 25px;
+            background-color: rgb(11, 224, 224);
+            top: 28px;
+            color: white;
+        }
+        .box3{
+            font-size: 8px;
+            font-weight: bold;
+            position: absolute;
+            left: 150px;
+            top: 500px;
+        }
+        .icons{
+            font-size: 20px;
+            font-weight: bold;
+            position: absolute;
+            left: 120px;
+            top: 570px;
+        }
+        .container3{
+            width: 1240px;
+            height: 600px;
+            background-color: rgb(215, 232, 228);
+            position: absolute;
+            left: 150px;
+            /* bottom:-500px; */
+            bottom: -900px;
+            border-radius: 7px;
+        }
+        .container3 p{
+            position: relative;
+            top: 30px;
+            /* right: auto; */
+            font-size: 12px;
+            font-weight: bold;
+            color: black;
+            padding-left: 250px;
+            left: -90px;
+        }
+        .container3 p span{
+            /* position: relative;
+            top: 30px; */
+            font-size: large;
+            font-weight: bold;
+            font-family:sans-serif;
+            color: rgb(51, 226, 144);
+        }
+        .container3 h3{
+            position: relative;
+            top: 30px;
+            color: black;
+            font-size: 20px;
+            padding-left: 250px;
+            font-family: sans-serif;
+            font-weight: bold;
+            left: -90px;
+        }
+        .container3 h3 a{
+            color: black;
+        }
+        .container3 h4{
+            position: relative;
+            top: 30px;
+            color: black;
+            font-size: 11px;
+            padding-left: 250px;
+            left: -90px;
+        }
+        .container3 h5{
+            position: relative;
+            top: 30px;
+            color: black;
+            font-size: 11px;
+            padding-left: 250px;
+            left: -90px;
+        }
+        .container3 button{
+            /* position: relative;
+            top: 30px; */
+            height: 35px;
+            width:200px;
+            background-color: rgb(51, 226, 144);
+            position: relative;
+            left:248px;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            margin-top: 40px;
+            left: 159px;
+        }
+        .gallery-cff{
+            position: absolute;
+            display: flex;
+            top:800px;
+            left: 400px;
+        }
+        .image11{
+            height: 180px;
+            width:110px;
+            border-radius: 7px;
+            margin-left: 355px;
+        }
+        .image22{
+            height: 120px;
+            width: 80px;
+            border-radius: 7px;
+            margin-left: 5px;
+            position: absolute;
+            top: 20px;
+        }
+        .new1{
+            height: 40px;
+            width: 40px;
+            border: 1px;
+            box-shadow: inset;
+            background-color: pink;
+        }
+        .grid-container {
+    display: grid;
+    grid-template-columns: 180px 180px 180px 180px;
+    /* grid-template-columns: 100px auto auto auto; */
+    grid-template-rows: 100px 100px;
+    grid-gap: 3px;
+    background-color: rgb(215, 232, 228);
+    padding: 70px;
+    position: absolute;
+    bottom: -50px;
+    left: 90px;
+    background: fixed;
+    margin-bottom: 10px;
+    grid-gap: 5px;
+    }
+
+    .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 50px 0;
+    font-size: 30px;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-bottom: 7px;
+    }
+    .grid-container .item1 p{
+        text-align: left;
+        position: relative;
+        /* right: -850px; */
+        left: -210px;
+        font-size: 13px;
+        font-family: sans-serif;
+        font-weight: bold;
+        top: -50px;
+        bottom: 90px;
+    }
+    .grid-container .item1 span{
+        text-align: left;
+        font-size: 15px;
+        position: relative;
+        bottom: 55px;
+        right: 43px;
+        color: gray;
+    }
+    .grid-container .item1 span:nth-child(8)
+    {
+        color: gray;
+    }
+    .grid-container .item1:nth-child(8)
+    {
+        background-color: black;
+    }
+    .grid-container .item1:nth-child(8) p
+    {
+        color: white;
+        position: relative;
+        right: 210px;
+    }
+    .container4{
+            width: 900px;
+            /* background-color: rgb(215, 232, 228); */
+            position: absolute;
+            left: 50px;
+            bottom:-1100px;
+        }
+        .container4 p{
+            position: relative;
+            top: 45px;
+            font-size: 8px;
+            font-weight: bold;
+            color: black;
+            padding-left: 250px;
+        }
+        .container4 p span{
+            /* position: relative;
+            top: 30px; */
+            font-size: large;
+            font-weight: bold;
+            font-family:sans-serif;
+            color: rgb(51, 226, 144);
+        }
+        .container4 h3{
+            position: relative;
+            top: 40px;
+            color: black;
+            font-size: 25px;
+            padding-left: 250px;
+        }
+        .container4 button{
+            position: relative;
+            left: 840px;
+            bottom: 40px;
+            width:150px;
+            height: 40px;
+            color: white;
+            background-color: rgb(51, 226, 144);
+            border: none;
+            border-radius: 4px;
+        }
+        .container5{
+            width: 100px;
+            /* background-color: rgb(215, 232, 228); */
+            position: absolute;
+            left: 50px;
+            bottom:-1100px;
+        }
+        .container5 p{
+            position: absolute;
+            bottom: -75px;
+            font-size: 25px;
+            font-weight: bold;
+            font-family:sans-serif;
+            color: black;
+            padding-left: 250px;
+            left: -150px;
+        }
+        .container5 h3{
+            position: absolute;
+            bottom: -78px;
+            left:1220px;
+            font-size: 25px;
+            font-weight: bold;
+            font-family:sans-serif;
+            color: black;
+        }
+        .container6{
+            width: 800px;
+            /* background-color: rgb(215, 232, 228); */
+            position: absolute;
+            left: 50px;
+            bottom:-1300px;
+        }
+        .container6 p{
+            position: relative;
+            top: 30px;
+            font-size: 8px;
+            font-weight: bold;
+            color: black;
+            padding-left: 250px;
+        }
+        .container6 p span{
+            /* position: relative;
+            top: 30px; */
+            font-size: large;
+            font-weight: bold;
+            font-family:sans-serif;
+            color: rgb(51, 226, 144);
+        }
+        .container6 h3{
+            position: relative;
+            top: 30px;
+            color: black;
+            font-size: 25px;
+            padding-left: 250px;
+        }
+        .container7{
+            width: 700px;
+            /* background-color: rgb(215, 232, 228); */
+            position: absolute;
+            left: 50px;
+            bottom:-1100px;
+        }
+        .gallery-cfff{
+            position: absolute;
+            display: flex;
+            top:300px;
+            left: 240px;
+        }
+        .image111{
+            height: 140px;
+            width: 220px;
+            border-radius: 7px;
+            margin-left: 5px;
+        }
+        .image222{
+            height: 140px;
+            border-radius: 7px;
+            margin-left: 5px;
+        }
+        .container8{
+            width: 100px;
+            /* background-color: rgb(215, 232, 228); */
+            position: absolute;
+            left: 310px;
+            bottom:-1840px;
+        }
+        .container9{
+            width: 100px;
+            /* background-color: rgb(215, 232, 228); */
+            position: absolute;
+            left: 550px;
+            bottom:-1825px;
+        }
+        .container10{
+            width: 100px;
+            /* background-color: rgb(215, 232, 228); */
+            position: absolute;
+            left: 800px;
+            bottom:-1860px;
+        }
+        /* .lg{
+            width: 700px;
+            position: absolute;
+            left: 300px;
+            bottom: -1400px;
+            color: black;
+        } */
+        .lg i:nth-child(1)
+        {
+            width: 100px;
+            position: absolute;
+            left: 250px;
+            bottom: -1640px;
+            color: black;
+        }
+        .lg i:nth-child(2)
+        {
+            width: 100px;
+            position: absolute;
+            left: 1050px;
+            bottom: -1640px;
+            color: black;
+        }
+        .head{
+            position: absolute;
+            top:-10px;
+            font-size:15px;
+            color: gray;
+            padding-bottom: 20px;
+        }
+        .para{
+            font-size: 20px;
+            color: black;
+            font-family: sans-serif;
+            font-weight: bold;
+            padding-top: 20px;
+        }
+        .unlist {
+        list-style: none;
+        }
+
+        .unlist li::before {
+        content: "\2022";
+        color: rgb(51, 226, 144);
+        font-weight: bold;
+        /* display: inline-block;  */
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+        }
+        .b1{
+            width: 200px;
+            height: 40px;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: rgb(51, 226, 144);
+            position: absolute;
+            bottom: -1980px;
+            left: 550px;
+            border: none;
+            border-radius: 5px;
+        }
+        .b2{
+            width: 200px;
+            height: 40px;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: black;
+            position: absolute;
+            bottom: -1980px;
+            left: 760px;
+            border: none;
+            border-radius: 5px;
+        }
+        .container12{
+            width: 1240px;
+            /* background-color: rgb(166, 226, 212); */
+            background-color: #8BDB81;
+            position: absolute;
+            left: 120px;
+            bottom:650px;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .container12 p{
+            position: absolute;
+            top: 30px;
+            font-size: 14px;
+            font-weight: bold;
+            color: black;
+            padding-left: 250px;
+            left: -50px;
+        }
+        .container12 p span{
+            /* position: relative;
+            top: 30px; */
+            font-size: large;
+            font-weight: bold;
+            font-family:sans-serif;
+            color: rgb(51, 226, 144);
+        }
+        .container12 h3{
+            position: relative;
+            top: 30px;
+            color: black;
+            font-size: 25px;
+            padding-left: 250px;
+            left: -70px;
+        }
+        .container12 h4{
+            position: relative;
+            top: 30px;
+            color: black;
+            font-size: 15px;
+            padding-left: 250px;
+            left: -70px;
+        }
+        .container12 button{
+            /* position: relative;
+            top: 30px; */
+            height: 35px;
+            width:200px;
+            background-color: rgb(51, 226, 144);
+            position: relative;
+            left:248px;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            margin-top: 40px;
+            left: 170px;
+        }
+        /* .container13{
+            width: 100px;
+            position: absolute;
+            left: 50px;
+            bottom:-1100px;
+        } */
+        .gallery-cffff{
+            position: absolute;
+            display: flex;
+            top:-1160px;
+            left: 640px;
+            height: 100px;
+        }
+        .image55{
+            position: absolute;
+            bottom: -950px;
+            left: -20px;
+            height: 160px;
+            width: 140px;
+            border-radius: 7px;
+            margin-left: 5px;
+        }
+        .image66{
+            position: absolute;
+            bottom: -980px;
+            left: 130px;
+            height: 160px;
+            width: 140px;
+            border-radius: 7px;
+            margin-left: 5px;
+        }
+        .child22{
+            width: 230px;
+            height: 120px;
+            background-color: black;
+            position: relative;
+            left: 610px;
+            bottom: 50px;
+            border: none;
+            border-radius: 6px;
+            
+        }
+        .para11{
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            padding: 10px;
+            font-family: sans-serif;
+        }
+        .para22{
+            color: gray;
+            font-size: 15px;
+            text-align: center;
+        }
+        .child22 a{
+            color: rgb(51, 226, 144);
+            font-size: 15px;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .main-container{
+            background-color: rgb(32, 30, 30);
+            width: 100%;
+            height: 650px;
+            position: absolute;
+            /* bottom: -3600px; */
+            /* bottom: -3000px; */
+            top: 2700px;
+        }
+        .unlist1 li{
+            float: left;
+            list-style-type: none;
+            padding-left: 30px;
+            margin-left: 10px;
+            position: relative;
+            left: 140px;
+            top: 200px;
+            font-size: 15px;
+            font-family:'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: white;
+        }
+        .unlist1 .slist{
+            float: left;
+            list-style-type: none;
+            padding-left: 10px;
+            margin-left: 10px;
+            position: relative;
+            left: 160px;
+            top: 60px;
+            font-size: 12px;
+            font-family:'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: rgb(32, 30, 30);
+        }
+        .unlist2 li{
+            list-style: none;
+            position: absolute;
+            bottom: -300px;
+            left: 220px;
+            color: gray;
+            padding-top: 20px;
+        }
+        .unlist3 li{
+            list-style: none;
+            position: absolute;
+            bottom: -320px;
+            left: 350px;
+            color: gray;
+            padding-top: 20px;
+        }
+        .unlist4 li{
+            list-style: none;
+            position: absolute;
+            bottom: -300px;
+            left: 500px;
+            color: gray;
+            padding-top: 20px;
+        }
+        .unlist5 li{
+            list-style: none;
+            position: absolute;
+            bottom: -300px;
+            left: 620px;
+            color: gray;
+            padding-top: 20px;
+        }
+        .unlist6 li{
+            list-style: none;
+            position: absolute;
+            bottom: -300px;
+            left: 760px;
+            color: gray;
+            padding-top: 20px;
+        }
+        .unlist7 i:nth-child(1){
+            list-style: none;
+            position: absolute;
+            bottom: -300px;
+            left: 890px;
+            color: rgb(51, 226, 144);
+            padding: 20px;
+        }
+        .unlist7 i:nth-child(2){
+            list-style: none;
+            position: absolute;
+            bottom: -300px;
+            left: 920px;
+            color: rgb(51, 226, 144);
+            padding: 20px;
+        }
+        .unlist7 i:nth-child(3){
+            list-style: none;
+            position: absolute;
+            bottom: -300px;
+            left: 950px;
+            color: rgb(51, 226, 144);
+            padding: 20px;
+        }
+        
+        .line p{
+            position: absolute;
+            bottom: -2900px;
+            left: 360px;
+            font-size: 25px;
+            font-weight: bold;
+            font-family:sans-serif;
+            color: white;
+        }
+        .line p span{
+            position: absolute;
+            bottom: 7px;
+            left: -10px;
+            font-size: large;
+            font-weight: bold;
+            font-family:sans-serif;
+            color: rgb(11, 224, 224);
+        }
+        .line3 p{
+            position: absolute;
+            bottom: -2860px;
+            left: 950px;
+            font-size: 25px;
+            font-weight: bold;
+            font-family:sans-serif;
+            color: white;
+        }
+        .line .line2
+        {
+            position: absolute;
+            bottom: -2950px;
+            left: 350px;
+            font-size: 15px;
+            font-weight: bold;
+            font-family:sans-serif;
+            color: gray;
+        }
+        .line3 .line4
+        {
+            position: absolute;
+            bottom: -2910px;
+            left: 950px;
+            font-size: 15px;
+            font-weight: bold;
+            font-family:sans-serif;
+            color: gray;
+        }
+        .sline{
+            position: absolute;
+            width: 1350px;
+            /* color: red; */
+            height: 10px;
+            background-color: rgb(32, 30, 30);
+            bottom: -2700px;
+            left: 50px;
+            right: 100px;
+            border: 2px white solid;
+            border-bottom-color: rgb(118, 114, 107);
+            border-left-color: rgb(32, 30, 30);
+            border-right-color: rgb(32, 30, 30);
+            border-top-color: rgb(32, 30, 30);
+        }
+        .last-con{
+            height: 50px;
+            width: 100%;
+            background-color: rgb(246, 213, 238);
+            position: absolute;
+            bottom: -3000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <p><span>_</span>SKILLY</p>
+        <ul class="list1">
+            <li class="list2">ABOUT US</li>
+            <li class="list2">OUR SERVICES</li>
+            <li class="list2">OUT TEAM</li>
+            <li class="list2">CASE STUDIES</li>
+            <li class="list2">OUR BLOG</li>
+            <li class="list2">CONTACT US</li>
+        </ul>
+        <button>SEND REQUEST</button>
+    </div>
+    <div class="container2">
+        <p><span>_</span>USER EXPERIANCE AGENCY</p>
+        <h2>We know how<br> 
+            to effectively use<br>
+             the user experiance</h2>
+    </div>
+    <div class="child">
+        <p class="para1">please ignore designs that ignores people</p>
+        <p class="para2">Frank.K Designer</p>
+    </div>
+    <div class="child2">
+
+    </div>
+    <div class="child3">
+
+    </div>
+    <div class="child4">
+
+    </div>
+    <div class="gallery-cf">
+        <div><img src="CS BGs (1).png" alt="alt" class="image1"></div>
+        <div><img src="CS BGs (1).png" alt="alt" class="image2"></div>
+        <div><img src="CS BGs (1).png" alt="alt" class="image3"></div>
+        <div><img src="CS BGs (1).png" alt="alt" class="image4"></div>
+        <div><img src="CS BGs (1).png" alt="alt" class="image5"></div>
+    </div>
+    <div class="circle">
+        <i class="fa-solid fa-arrow-down"></i>
+    </div>
+    <div class="box3">
+        <p>DISCOVER<br> SKILLY</p>
+    </div>
+    <div class="icons">
+        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    <div class="container3">
+        <p><span>_</span>WHAT WE DO</p>
+        <h3>We are a team of experianced professional<br> 
+            in their specialities.We belive that <a href="#">User experiance</a><br>
+             is key in achieving the set goals</h3>
+        <h4>We know how<br> 
+            to effectively use<br>
+             the user experiance</h4>
+        <h5>We know how<br> 
+            to effectively use<br>
+             the user experiance</h5>
+        <button>FREE CONSULTATION</button>
+        <div class="grid-container">
+            <div class="item1"><span  class="text">01</span><p>BusinessStrategy<i class="fa-solid fa-arrow-right"></i></p></div>
+            <div class="item1"><span  class="text">02</span><p>MarketingStrategy<i class="fa-solid fa-arrow-right"></i></p></div>
+            <div class="item1"><span  class="text">03</span><p>UX/UI<i class="fa-solid fa-arrow-right"></i></p></div>
+            <div class="item1"><span  class="text">04</span><p>ProductDesign<i class="fa-solid fa-arrow-right"></i></p></div>
+            <div class="item1"><span  class="text">05</span><p>Research<i class="fa-solid fa-arrow-right"></i></p></div>
+            <div class="item1"><span  class="text">06</span><p>ServiceDesign<i class="fa-solid fa-arrow-right"></i></p></div>
+            <div class="item1"><span  class="text">07</span><p>WebDesign<i class="fa-solid fa-arrow-right"></i></p></div>
+            <div class="item1"><span  class="text">  VIEW ALL</span><p>OurServices<i class="fa-solid fa-arrow-right"></i></p></div>
+        </div>
+    </div>
+    <div class="gallery-cff">
+        <div><img src="CS BGs (1).png" alt="alt" class="image11"></div>
+        <div><img src="CS BGs (1).png" alt="alt" class="image22"></div>
+    </div>
+    <div class="container4">
+        <p><span>_</span>HOW WE WORK</p>
+        <h3>We know how<br> 
+            to effectively use<br>
+             the user experiance</h3>
+        <button>SEND REQUEST</button>
+    </div>
+    <div class="container5">
+        <p>PROBLEM</p>
+        <h3>RESULTS</h3>
+    </div>
+    <div class="container6">
+        <p><span>_</span>CASE STUDIES</p>
+        <h3>See how we solved our client's problem</h3>
+    </div>
+    <div class="container7">
+        <div class="gallery-cfff">
+            <div><img src="CS BGs (1).png" alt="alt" class="image111">
+            </div>
+            <div><img src="CS BGs (1).png" alt="alt" class="image222"></div>
+            <div><img src="CS BGs (1).png" alt="alt" class="image222"></div>
+        </div>
+    </div>
+    <div class="container8">
+        <h4 class="head">16 June 2020</h4>
+        <p class="para">Healthy.co, an online<br> platform for patient<br> management <i class="fa-solid fa-arrow-right"></i></p>
+        <ul class="unlist">
+            <li>Business Strategy</li>
+            <li>Research</li>
+            <li>UX/UI</li>
+        </ul>
+    </div>
+    <div class="container9">
+        <h4 class="head">16 June 2020</h4>
+        <p class="para">Healthy.co, an online<br> platform for patient<br> management <i class="fa-solid fa-arrow-right"></i></p>
+        <ul class="unlist">
+            <li>UX/UI</li>
+            <li>Product Design</li>
+        </ul>
+    </div>
+    <div class="container10">
+        <h4 class="head">16 June 2020</h4>
+        <p class="para">Healthy.co, an online<br> platform for patient<br> management <i class="fa-solid fa-arrow-right"></i></p>
+        <ul class="unlist">
+            <li>UX/UI</li>
+            <li>Product Design</li>
+            <li>Web Design</li>
+        </ul>
+    </div>
+    <div class="lg">
+        <i class="fa-solid fa-less-than"></i>
+        <i class="fa-solid fa-greater-than"></i>
+    </div>
+    <div class="container11">
+        <button class="b1">FREE CONSULTATION</button>
+        <button class="b2">ALL CASE STUDIES</button>
+    </div>
+    
+    <div class="main-container">
+        <div class="container12">
+            <p><span>_</span>OUR TEAM</p>
+            <h3>We build our knowledge<br> 
+                 on our experiance</h3>
+            <h4>We know how<br> 
+                to effectively use<br>
+                 the user experiance</h4>
+            <button>OUR TEAM</button>
+            <ul class="unlist1">
+                <li><span style="color: aqua;font-weight: bold;">_</span>ABOUT US</li>
+                <li><span style="color: aqua;font-weight: bold;">_</span>OUR SERVICES</li>
+                <li class="slist">DOWNLOADS</li>
+                <li><span style="color: aqua;font-weight: bold;">_</span>PORTFOLIO</li>
+                <li><span style="color: aqua;font-weight: bold;">_</span>CONTACT US</li>
+                <li><span style="color: aqua;font-weight: bold;">_</span>FOLLOW US</li>
+            </ul>
+            <ul class="unlist2">
+                <li>Who we are?<br>Our Team<br>Career</li>
+            </ul>
+            <ul class="unlist3">
+                <li>Business Strategy<br>Marketing Strategy<br>UX/UI<br>Product Design</li>
+            </ul>
+            <ul class="unlist4">
+                <li>Research<br>Service Design<br>Web Design</li>
+            </ul>
+            <ul class="unlist5">
+                <li>Case Studies<br>Dribble -><br>Behance.net -></li>
+            </ul>
+            <ul class="unlist6">
+                <li>Contact Us<br>Headquaters<br>Offices</li>
+            </ul>
+            <div class="unlist7">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+        <!-- <div class="container13"> -->
+            <div class="gallery-cffff">
+                <div><img src="CS BGs (1).png" alt="alt" class="image55">
+                </div>
+                <div><img src="CS BGs (1).png" alt="alt" class="image66"></div>
+            </div>
+        <!-- </div> -->
+        <div class="child22">
+            <p class="para11">We are hiring! <i class="fa-solid fa-arrow-right"></i></p>
+            <p class="para22">Nunc suscipit id nisi sed vulputate<br><a href="mailto:jobs@skilly.com">jobs@skilly.com</a> venanatis</p>
+        </div>
+        <div class="last">
+    
+        </div>
+    </div>
+    <div class="sline">
+
+    </div>
+    <div class="line">
+        <p><span>_</span>SKILLY</p>
+        <br>
+        <br>
+        <p class="line2">@ 2020 Skilly.com .All rights reserved. Muffin group</p>
+    </div>
+    <div class="line3">
+        <p><span></span>+91- 9876543210</p>
+        <br>
+        <br>
+        <p class="line4">Privacy policy         Cookies</p>
+    </div>
+    <div class="last-con">
+
+    </div>
+
+    
+    
+</body>
+</html>
